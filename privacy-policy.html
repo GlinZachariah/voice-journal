@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Journal - Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A6CF7;
+            --primary-light: #E8EDFE;
+            --on-primary: #FFFFFF;
+            --surface: #FAFAFA;
+            --surface-card: #FFFFFF;
+            --on-surface: #1C1B1F;
+            --on-surface-variant: #49454F;
+            --outline: #CAC4D0;
+            --outline-variant: #E7E0EC;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--on-surface);
+            background: var(--surface);
+        }
+
+        /* Top app bar */
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--surface-card);
+            border-bottom: 1px solid var(--outline-variant);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .top-bar a {
+            color: var(--on-surface);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar svg { flex-shrink: 0; }
+        .top-bar h1 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .header .icon {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-light);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+        .header .icon svg { color: var(--primary); }
+        .header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .header .date {
+            font-size: 13px;
+            color: var(--on-surface-variant);
+        }
+
+        /* Card */
+        .card {
+            background: var(--surface-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+        }
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--on-surface);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card h3 .number {
+            width: 24px;
+            height: 24px;
+            background: var(--primary);
+            color: var(--on-primary);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: var(--on-surface-variant);
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .card ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .card ul:last-child { margin-bottom: 0; }
+        .card li {
+            font-size: 14px;
+            color: var(--on-surface-variant);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .card li:last-child { margin-bottom: 0; }
+        .card strong { color: var(--on-surface); font-weight: 600; }
+        .card a { color: var(--primary); text-decoration: none; }
+        .card a:hover { text-decoration: underline; }
+        .card code {
+            background: var(--primary-light);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+        }
+
+        /* Highlight card */
+        .card.highlight {
+            background: var(--primary-light);
+            border: 1px solid rgba(74, 108, 247, 0.15);
+        }
+        .card.highlight p { color: var(--on-surface); }
+
+        /* Contact card */
+        .card.contact {
+            border: 1px solid var(--outline-variant);
+        }
+        .contact-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--on-surface-variant);
+            margin-bottom: 4px;
+        }
+        .contact-value {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--on-surface);
+        }
+
+        /* Footer nav */
+        .footer-nav {
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid var(--outline-variant);
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        .footer-nav a {
+            font-size: 13px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="javascript:history.back()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+    </a>
+    <h1>Privacy Policy</h1>
+</div>
+
+<div class="container">
+
+    <div class="header">
+        <div class="icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+        </div>
+        <h2>Voice Journal</h2>
+        <p class="date">Effective Date: April 17, 2026</p>
+    </div>
+
+    <div class="card highlight">
+        <p>Voice Journal ("the App") is developed by iamgroot. This Privacy Policy explains how the App handles your information. <strong>We are committed to protecting your privacy and being fully transparent about our practices.</strong></p>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">1</span> Information We Collect</h3>
+        <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong> Voice Journal operates entirely on your device.</p>
+        <ul>
+            <li><strong>Voice recordings:</strong> The App uses your device's built-in speech recognition service to convert speech to text in real time. Audio is processed locally by Android's on-device speech recognizer or by Google's speech recognition service (depending on your device configuration). We do not record, store, or transmit any audio data ourselves.</li>
+            <li><strong>Notes:</strong> All notes you create (titles and content) are stored locally on your device in an internal database. This data never leaves your device unless you explicitly choose to export it.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">2</span> Permissions</h3>
+        <p>The App requests the following permission:</p>
+        <ul>
+            <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Required to capture your voice for speech-to-text conversion. This permission is only used when you actively start a voice recording session. No audio is recorded, stored, or transmitted by the App.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">3</span> Third-Party Services</h3>
+        <p>The App relies on Android's built-in <code>SpeechRecognizer</code> API for voice-to-text conversion. Depending on your device and settings, speech recognition may be processed:</p>
+        <ul>
+            <li><strong>On-device:</strong> If you have offline speech recognition language packs installed, audio is processed entirely on your device.</li>
+            <li><strong>Via Google's servers:</strong> If offline recognition is unavailable, your device may send audio to Google's speech recognition servers for processing. This is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>, not ours.</li>
+        </ul>
+        <p>We do not integrate any analytics, advertising, crash reporting, or tracking services.</p>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">4</span> Data Storage and Security</h3>
+        <ul>
+            <li>All note data is stored in the App's private internal storage on your device, which is sandboxed by Android and inaccessible to other apps.</li>
+            <li>If you use the Export feature, a zip file is created in the App's temporary cache and shared via Android's share sheet. The temporary file is managed by the operating system.</li>
+            <li>Uninstalling the App permanently deletes all stored notes.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">5</span> Data Sharing</h3>
+        <p><strong>We do not share, sell, or transfer any of your data to third parties.</strong> Your notes remain entirely under your control.</p>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">6</span> Children's Privacy</h3>
+        <p>The App does not knowingly collect any information from children under the age of 13. The App does not collect personal information from any user.</p>
+    </div>
+
+    <div class="card">
+        <h3><span class="number">7</span> Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+    </div>
+
+    <div class="card contact">
+        <h3><span class="number">8</span> Contact Us</h3>
+        <p class="contact-label">Developer</p>
+        <p class="contact-value">iamgroot</p>
+        <br>
+        <p>If you have any questions or concerns about this Privacy Policy or the App, please reach out via the app's store listing or by opening an issue on our project repository.</p>
+    </div>
+
+    <div class="footer-nav">
+        <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+
+</div>
+
+</body>
+</html>
